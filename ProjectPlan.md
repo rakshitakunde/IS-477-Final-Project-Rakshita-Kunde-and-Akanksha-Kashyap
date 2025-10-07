@@ -8,6 +8,6 @@ Datasets:
 
 Timeline: hi
 
-Constraints:
+Constraints: To create this project, there are several limitations and conditions that may affect how we collect, process, and analyze our datasets. First, the Crimes dataset covers incidents from 2001 onwards, however the Violence Reduction dataset includes victim-level records for homicides from 1991 to present and from 2010 onwards for shootings. The timeframes overlap but aren’t identical. Secondly, the crimes dataset records incidents while the Violence Reduction dataset records victims. Thirdly, both datasets are public, but they both involve sensitive information about crimes and victims. The data must be handled ethically in a way that avoid identification and stigmatization. Visualizations also must not expose individual-level locations without aggregation. Next, both datasets are updated daily and historical records may change upon new available information. Our interpretations may not be consistent over time. Additionally, the Crimes dataset has over 8 million rows, making it difficult to analyze all of the data. Finally, the two datasets use different naming conventions and have different data types and formatting. 
 
 Gaps:
