@@ -1,6 +1,17 @@
 Overall Goal: The goal of this project is to design and implement an end-to-end data curation and analysis system that showcases the full data lifecycle, from acquiring the data to producing insightful results, of our two chosen datasets. We will be collecting, organizing, cleaning, and integrating the data using the appropriate tools and skills learned during lecture and the coursework. We will also be applying concepts, such as ethical data handling, data quality assessment, workflow automation, and reproducibility to show how we treat the datasets and arrive at our conclusions. We intend to use our data to show insights into real-world issues and events that showcase current gaps within society. 
 
 Research Questions:
+1. How does the time delay between a crime occurring and the public data update differ between the broad “Crimes - 2001 to Present” dataset and the specialized “Violence Reduction - Victims of Homicides and Non-Fatal Shootings” dataset?
+2. Are the block-level locations in the "Crimes - 2001 to Present" dataset enough to prevent someone from identifying a specific victim when cross-referenced with the age, race, and sex fields in the "Violence Reduction - Victims of Homicides and Non-Fatal Shootings" dataset?
+3. Do the City's Terms of Use allow for a merged dataset to be shared publicly, or are there restrictions on combining these two sources?
+4. What specific unique fields in the "Violence Reduction - Victims of Homicides and Non-Fatal Shootings" dataset (like age or gender) require special handling or transformation during acquisition that are not a concern when acquiring the basic "Crimes - 2001 to Present" incident data?
+5. What is the best way to design a database table structure that links the "Crimes - 2001 to Present" data (incident) to the "Violence Reduction - Victims of Homicides and Non-Fatal Shootings" data (person) without duplicating location and date information?
+6. What’s the most reliable method for matching a victim record from the "Violence Reduction - Victims of Homicides and Non-Fatal Shootings" dataset back to its original incident record in the "Crimes - 2001 to Present” dataset, considering that an incident may have multiple victims?
+7. Do a crime's final classification codes (i.e. IUCR codes) show inconsistencies between the "Crimes - 2001 to Present” dataset and the records in the "Violence Reduction - Victims of Homicides and Non-Fatal Shootings" dataset for the same event?
+8. What’s the best strategy for handling missing values and correcting outliers across the two large, combined datasets?
+9. How can an automated pipeline be built to ensure tracking and recording transformation steps from the original source files to the final, cleaned, and merged dataset?
+10. What documentation and environment setup are necessary to make the entire process of cleaning and analyzing the merged data reproducible by an outside researcher?
+11. What essential metadata must be created to ensure the integrated dataset is fully understandable and reusable by future analysts?
 
 Team: Regarding our team member roles and responsibilities, both Rakshita Kunde and Akanksha Kashyap will work on all parts of the final project, splitting the responsibilities evenly. We will work on each part together to have effective collaboration in all aspects.
 
