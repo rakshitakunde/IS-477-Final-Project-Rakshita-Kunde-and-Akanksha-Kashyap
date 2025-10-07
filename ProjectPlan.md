@@ -15,14 +15,35 @@ Research Questions:
 10. What documentation and environment setup are necessary to make the entire process of cleaning and analyzing the merged data reproducible by an outside researcher?
 11. What essential metadata must be created to ensure the integrated dataset is fully understandable and reusable by future analysts?
 
-Team: Regarding our team member roles and responsibilities, both Rakshita Kunde and Akanksha Kashyap will work on all parts of the final project, splitting the responsibilities evenly. We will work on each part together to have effective collaboration in all aspects.
+Team: Regarding our team member roles and responsibilities, both Rakshita Kunde and Akanksha Kashyap will work on all parts of the final project, splitting the responsibilities evenly. We will work on each part together to have effective collaboration in all aspects. To split the tasks evenly for the remainder of the project, Rakshita will be the data handler who will work with the Acquisition, Enrichment, Integration, and Reproducibility code and document the Data Profile, Reproducing Steps, and References. While, Akanksha will be the architecture lead handling the Storage Schema, Cleaning, and Automation and document the Lifecycle, Ethical Handling, Quality/Cleaning Summary, and Metadata.
 
 Datasets: Datasets: The two datasets that we will be analyzing for our project is the City of Chicago “Crimes - 2001 to Present” (https://catalog.data.gov/dataset/crimes-2001-to-present) and the City of Chicago “Violence Reduction - Victims of Homicides and Non-Fatal Shootings” (https://catalog.data.gov/dataset/violence-reduction-victims-of-homicides-and-non-fatal-shootings). These two datasets were both published by the City of Chicago and derived from the Chicago Police Department (CPD) records. 
   The first dataset “Crimes - 2001 to Present” is a broader, more comprehensive record of all the reported crime incidents in Chicago from 2001 onward, extracted from the CPD’s CLEAR system. CLEAR stands for Citizen Law Enforcement Analysis and Reporting, which is an integrated, state-of-the-art information technology enterprise system. It serves as the central data warehouse and user interface for the CPD to support a wide range of police and criminal justice functions, whether that’s day-to-day policing, or in-depth crime analysis. 
   The second dataset “Violence Reduction - Victims of Homicides and Non-Fatal Shootings” is a more specialized dataset that focuses on individual-level victimizations related exclusively to homicides and non-fatal shootings. This dataset covers homicides that date back to 1991 and non-fatal shootings from 2010 to the present, and is updated daily with around a 48-hour lag.
   The “Crimes - 2001 to Present” dataset tracks incidents and includes different fields like the Illinois Uniform Crime Reporting (IUCR) code and block-level location, the “Violence Reduction - Victims of Homicides and Non-Fatal Shootings” dataset focuses on the individual victim, often referencing the IUCR codes from the “Crimes - 2001 to Present” dataset for classification. Overall, the "Violence Reduction - Victims of Homicides and Non-Fatal Shootings" dataset can be viewed as a specialized, violence-focused subset of the broader "Crimes - 2001 to Present" incident data, with both being updated daily, but with slightly different data lag policies.
 
-Timeline:
+Timeline: For the Team Selection and Project Plan milestones of this project, both members of the team worked evenly on both assignments to meet the deadlines and requirements necessary. To complete future milestones with the Interim Status Report and Final Project Submission, we have broken up the rest of the semester into 2 phases to ensure we get ample time to work with the data, meet our requirements, and complete the report thoroughly so it can be submitted by the given deadline. Phase 1 will consist of the brute work of working with the datasets themselves and better understanding both datasets so we can integrate them effectively. The second phase will focus on the finalization of the final report to ensure we communicate our findings sufficiently. The timeline would then look like:
+
+Deliverable:                              Target Completion Date:                Partner:                         Requirements Met:
+
+Phase 1:
+Data Lifecyle and Ethical Handling               10/14                       Akanksha Kashyap                          M1 & M2
+Data Collection/Acquisition Scripts              10/14                        Rakshita Kunde                              M3
+Store & Organization Design                      10/14                       Akanksha Kashyap                          M4 & M5 
+Extraction & Enrichment Scripts                  10/21                        Rakshita Kunde                              M6
+Data Quality & Cleaning                          10/21                       Akanksha Kashyap                          M9 & M10
+Data Integration Script                          10/21                        Rakshita Kunde                            M7 & M8
+Workflow Automation Draft                        10/28                       Akanksha Kashyap                          M11 & M12
+Reproducibility Setup Draft                      10/28                        Rakshita Kunde                              M13
+Drafting Interim Status Report                   11/08                Rakshita Kunde & Akanksha Kashyap
+Interim Status Report Submission                 11/11                Rakshita Kunde & Akanksha Kashyap        Interim Report & Git Release
+
+Phase 2:
+Final Workflow Implementation                    11/25                       Akanksha Kashyap                          M11 & M12
+Final Reproducibility Implementation             11/25                        Rakshita Kunde                              M13
+Metadata & Documentation Finalization            12/02                       Akanksha Kashyap                             M15
+Drafting Final Report                            12/09                Rakshita Kunde & Akanksha Kashyap
+Final Project Submission                         12/10                Rakshita Kunde & Akanksha Kashyap             ALL REQUIREMENTS
 
 Constraints: To create this project, there are several limitations and conditions that may affect how we collect, process, and analyze our datasets. First, the Crimes dataset covers incidents from 2001 onwards, however the Violence Reduction dataset includes victim-level records for homicides from 1991 to present and from 2010 onwards for shootings. The timeframes overlap but aren’t identical. Secondly, the crimes dataset records incidents while the Violence Reduction dataset records victims. Thirdly, both datasets are public, but they both involve sensitive information about crimes and victims. The data must be handled ethically in a way that avoid identification and stigmatization. Visualizations also must not expose individual-level locations without aggregation. Next, both datasets are updated daily and historical records may change upon new available information. Our interpretations may not be consistent over time. Additionally, the Crimes dataset has over 8 million rows, making it difficult to analyze all of the data. Finally, the two datasets use different naming conventions and have different data types and formatting. 
 
