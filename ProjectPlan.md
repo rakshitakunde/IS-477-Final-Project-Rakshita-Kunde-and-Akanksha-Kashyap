@@ -22,28 +22,27 @@ Datasets: Datasets: The two datasets that we will be analyzing for our project i
   The second dataset “Violence Reduction - Victims of Homicides and Non-Fatal Shootings” is a more specialized dataset that focuses on individual-level victimizations related exclusively to homicides and non-fatal shootings. This dataset covers homicides that date back to 1991 and non-fatal shootings from 2010 to the present, and is updated daily with around a 48-hour lag.
   The “Crimes - 2001 to Present” dataset tracks incidents and includes different fields like the Illinois Uniform Crime Reporting (IUCR) code and block-level location, the “Violence Reduction - Victims of Homicides and Non-Fatal Shootings” dataset focuses on the individual victim, often referencing the IUCR codes from the “Crimes - 2001 to Present” dataset for classification. Overall, the "Violence Reduction - Victims of Homicides and Non-Fatal Shootings" dataset can be viewed as a specialized, violence-focused subset of the broader "Crimes - 2001 to Present" incident data, with both being updated daily, but with slightly different data lag policies.
 
-Timeline: For the Team Selection and Project Plan milestones of this project, both members of the team worked evenly on both assignments to meet the deadlines and requirements necessary. To complete future milestones with the Interim Status Report and Final Project Submission, we have broken up the rest of the semester into 2 phases to ensure we get ample time to work with the data, meet our requirements, and complete the report thoroughly so it can be submitted by the given deadline. Phase 1 will consist of the brute work of working with the datasets themselves and better understanding both datasets so we can integrate them effectively. The second phase will focus on the finalization of the final report to ensure we communicate our findings sufficiently. The timeline would then look like:
-
-Deliverable:                              Target Completion Date:                Partner:                         Requirements Met:
+Timeline: For the Team Selection and Project Plan milestones of this project, both members of the team worked evenly on both assignments to meet the deadlines and requirements necessary. To complete future milestones with the Interim Status Report and Final Project Submission, we have broken up the rest of the semester into 2 phases to ensure we get ample time to work with the data, meet our requirements, and complete the report thoroughly so it can be submitted by the given deadline. Phase 1 will consist of the brute work of working with the datasets themselves and better understanding both datasets so we can integrate them effectively. The second phase will focus on the finalization of the final report to ensure we communicate our findings sufficiently. The timeline below will show the deliverable, target date, who is working on it, and what requirements are completed. Here is our comprehensive timeline for the rest of the semester:
 
 Phase 1:
-Data Lifecyle and Ethical Handling               10/14                       Akanksha Kashyap                          M1 & M2
-Data Collection/Acquisition Scripts              10/14                        Rakshita Kunde                              M3
-Store & Organization Design                      10/14                       Akanksha Kashyap                          M4 & M5 
-Extraction & Enrichment Scripts                  10/21                        Rakshita Kunde                              M6
-Data Quality & Cleaning                          10/21                       Akanksha Kashyap                          M9 & M10
-Data Integration Script                          10/21                        Rakshita Kunde                            M7 & M8
-Workflow Automation Draft                        10/28                       Akanksha Kashyap                          M11 & M12
-Reproducibility Setup Draft                      10/28                        Rakshita Kunde                              M13
-Drafting Interim Status Report                   11/08                Rakshita Kunde & Akanksha Kashyap
-Interim Status Report Submission                 11/11                Rakshita Kunde & Akanksha Kashyap        Interim Report & Git Release
+
+1. Data Lifecycle and Ethical Handling, 10/14, Akanksha Kashyap, M1 & M2
+2. Data Collection/Acquisition Scripts, 10/14, Rakshita Kunde, M3
+3. Store & Organization Design, 10/14, Akanksha Kashyap, M4 & M5 
+4. Extraction & Enrichment Scripts, 10/21, Rakshita Kunde, M6
+5. Data Quality & Cleaning, 10/21, Akanksha Kashyap, M9 & M10
+6. Data Integration Script, 10/21, Rakshita Kunde, M7 & M8
+7. Workflow Automation Draft, 10/28, Akanksha Kashyap, M11 & M12
+8. Reproducibility Setup Draft, 10/28, Rakshita Kunde, M13
+9. Drafting Interim Status Report, 11/08, Rakshita Kunde & Akanksha Kashyap
+10. Interim Status Report Submission, 11/11, Rakshita Kunde & Akanksha Kashyap, Interim Report & Git Release
 
 Phase 2:
-Final Workflow Implementation                    11/25                       Akanksha Kashyap                          M11 & M12
-Final Reproducibility Implementation             11/25                        Rakshita Kunde                              M13
-Metadata & Documentation Finalization            12/02                       Akanksha Kashyap                             M15
-Drafting Final Report                            12/09                Rakshita Kunde & Akanksha Kashyap
-Final Project Submission                         12/10                Rakshita Kunde & Akanksha Kashyap             ALL REQUIREMENTS
+1. Final Workflow Implementation, 11/25, Akanksha Kashyap, M11 & M12
+2. Final Reproducibility Implementation, 11/25, Rakshita Kunde, M13
+3. Metadata & Documentation Finalization, 12/02, kanksha Kashyap, M15
+4. Drafting Final Report, 12/09, Rakshita Kunde & Akanksha Kashyap
+5. Final Project Submission, 12/10, Rakshita Kunde & Akanksha Kashyap, ALL REQUIREMENTS
 
 Constraints: To create this project, there are several limitations and conditions that may affect how we collect, process, and analyze our datasets. First, the Crimes dataset covers incidents from 2001 onwards, however the Violence Reduction dataset includes victim-level records for homicides from 1991 to present and from 2010 onwards for shootings. The timeframes overlap but aren’t identical. Secondly, the crimes dataset records incidents while the Violence Reduction dataset records victims. Thirdly, both datasets are public, but they both involve sensitive information about crimes and victims. The data must be handled ethically in a way that avoid identification and stigmatization. Visualizations also must not expose individual-level locations without aggregation. Next, both datasets are updated daily and historical records may change upon new available information. Our interpretations may not be consistent over time. Additionally, the Crimes dataset has over 8 million rows, making it difficult to analyze all of the data. Finally, the two datasets use different naming conventions and have different data types and formatting. 
 
