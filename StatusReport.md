@@ -93,3 +93,5 @@ Rakshita Kunde Contributions:
 
 
 Akanksha Kashyap Contributions:
+
+For this project, I related the database lifecycle to the two chosen datasets. I also looked through the metadata to identify any ethical concerns and how we should address them in the context of this project. I also outlined how we store our data and the structure of our organization. I assessed our data quality after integration and observed what needs to be modified for the datasets to integrate seamlessly with each other. I also described the data cleaning techniques we used to read both datasets in the integrated dataset easily. 
