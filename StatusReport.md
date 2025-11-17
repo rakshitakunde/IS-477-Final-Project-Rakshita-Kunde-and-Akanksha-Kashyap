@@ -28,6 +28,7 @@ To assess data quality, we looked at completeness, data types, and consistency. 
 
 
 Updated Timeline:
+
 Below is our updated timeline, outlining what has been completed and what is still in progress:
 
 Phase 1 - Complete: 
@@ -63,6 +64,7 @@ Metadata & Documentation Finalization, 12/06, Akanksha Kashyap, M15
 Drafting Final Report, 12/09, Rakshita Kunde & Akanksha Kashyap
 
 Final Project Submission, 12/10, Rakshita Kunde & Akanksha Kashyap, ALL REQUIREMENTS
+
 
 
 
