@@ -6,22 +6,39 @@ Our project can be related to the USGS lifecycle model as it follows a linear pr
 Since we acquired both the Crimes and Violence Reduction datasets as .csv files, we chose to use a tabular model. These files showcase the data as tables with structured rows for each observation and columns for each feature. We are using a filesystem as our storage system since our Python scripts read and write files directly from directories located on disk. We use the following filesystem structure and naming conventions:
 
 IS477 Project/
+
 acquire.ipynb
+
 clean.ipynb
+
 integrate.ipynb
+
 main_analysis.ipynb
+
 data/
+
 raw/
+
 crimes_2001_to_present.csv
+
 violence_reduction_victims.csv	
+
 processed/
+
 crimes_clean.csv
+
 victims_clean.csv
+
 final/
+
 merged_victims_crimes.csv
+
 results/
+
 ethical_aggregate_analysis.txt
+
 iucr_inconsistency_analysis.txt
+
 lag_analysis.txt
 
 To assess data quality, we looked at completeness, data types, and consistency. While assessing completeness we observed how many records are missing critical keys such as case_number or incident_id using df[‘case_number’].isnull().sum(). The missing information prevents us from linking the two datasets together, keeping this issue in mind before cleaning. When looking at the data types, columns like age and year held placeholders like “unknown”. We also looked at syntactic inconsistencies such as variations in sex and race. “M”, “MALE”, “F”, and “FEMALE” were all possible entries to describe gender, which is assigned on a binary basis. To clean the data, we used script that standardizes, corrects, and prepares the datasets for integration and analysis. We dropped unusable rows where the key fields are missing. For example, we used df.dropna(subset = [‘case_number’]) to drop the entries with missing case numbers. For categorical fields like sex, we consolidated the missing or ambiguous entries into “unknown/other” using df[‘sex’] = df[‘sex’].map(sex_map).fillna(“UNKNOWN/OTHER”). We also transformed the age and date columns to fit proper numeric and datetime formats to ensure consistency and accuracy in analyzing information over time. We used script such as df['age'] = pd.to_numeric(df['age'].replace('UNKNOWN', pd.NA), errors='coerce') and df['date'] = pd.to_datetime(df['date'], errors='coerce'). We also fix inconsistent column naming conventions using df.columns = df.columns.str.lower().str.replace(' ', '_') to prevent errors when merging the two datasets together. To replace inconsistent categorical values so that entries are accurately represented, we applied mapping dictionaries. We cleaned up extra spaces to prevent mismatches between the two datasets using df['case_number'] = df['case_number'].str.strip().
